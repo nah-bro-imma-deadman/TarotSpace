@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Tarot Space · Гадание Да/Нет</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+        <video autoplay muted loop playsinline id="bg-video">
+  <source src="video/space.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+<div id="app">
+  <div class="app-header">
+    <h1>✧ TAROT SPACE ✧</h1>
+    <div class="subtitle">Да или Нет?</div>
+  </div>
+
+  <div class="view-container">
+    <div class="card-display">
+      <div id="yesnoResult" style="min-height: 300px; width: 100%;">
+        <div class="yesno-container" id="yesnoContent" style="display: none;">
+          <div class="yesno-text" id="yesnoText">?</div>
+          <div class="tarot-card" style="width: 160px; height: 240px;" id="yesnoCard">
+            <div class="card-name" id="yesnoCardName"></div>
+            <div class="card-desc" id="yesnoCardDesc"></div>
+          </div>
+        </div>
+        <div id="yesnoPlaceholder" style="padding: 30px; text-align: center;">
+          <i class="fas fa-question" style="font-size: 4rem; opacity: 0.5;"></i>
+          <p>Задайте вопрос и узнайте ответ</p>
+        </div>
+      </div>
+      <button class="btn" id="drawYesNoBtn">🔮 Узнать Да/Нет</button>
+      <button class="btn-secondary" onclick="location.href='main.html'" style="margin-top: 20px;">← На главную</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Tarot Space · Вселенная знает
+  </div>
+</div>
+<script src="js/storage.js"></script>
+<script src="js/common.js"></script>
+<script src="js/yes-no.js"></script>
+</body>
+</html>

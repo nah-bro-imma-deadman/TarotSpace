@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Tarot Space · Карта дня</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+      <video autoplay muted loop playsinline id="bg-video">
+  <source src="video/space.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+<div id="app">
+  <div class="app-header">
+    <h1>✧ TAROT SPACE ✧</h1>
+    <div class="subtitle">Карта дня</div>
+  </div>
+
+  <div class="view-container">
+    <div id="cardDayContainer" class="card-display">
+      <div style="min-height: 340px;">
+        <div id="cardDayContent" class="tarot-card card-animate" style="display: none;">
+          <div class="card-name" id="cardDayName"></div>
+          <div class="card-desc" id="cardDayDesc"></div>
+          <div style="margin-top: 16px; font-style: italic;" id="cardDayMeaning"></div>
+        </div>
+        <div id="cardDayPlaceholder" style="padding: 30px; text-align: center;">
+          <p><i class="fas fa-moon" style="font-size: 3rem; opacity: 0.7;"></i></p>
+          <p>Нажмите, чтобы получить карту дня</p>
+        </div>
+      </div>
+      <button class="btn" id="drawCardDayBtn">🎴 Тянуть карту</button>
+      <button class="btn-secondary" onclick="location.href='main.html'" style="margin-top: 20px;">← На главную</button>
+    </div>
+  </div>
+
+  <div class="footer">
+    © 2026 Tarot Space · Вселенная знает
+  </div>
+</div>
+<script src="js/storage.js"></script>
+<script src="js/common.js"></script>
+<script src="js/card-day.js"></script>
+</body>
+</html>

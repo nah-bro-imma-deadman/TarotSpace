@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Tarot Space · Вход / Регистрация</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <video autoplay muted loop playsinline id="bg-video">
+  <source src="video/space.mp4" type="video/mp4">
+</video>
+<div class="video-overlay"></div>
+<div id="app">
+  <div class="app-header">
+    <h1>✧ TAROT SPACE ✧</h1>
+    <div class="subtitle">Вход или регистрация</div>
+  </div>
+
+  <div class="view-container">
+    <div class="tabs">
+      <div class="tab active" data-tab="login">Вход</div>
+      <div class="tab" data-tab="register">Регистрация</div>
+    </div>
+    <div id="authFormContainer"></div>
+    <button class="btn-secondary" onclick="location.href='main.html'" style="margin-top: 20px;"><i class="fas fa-arrow-left"></i> На главную</button>
+  </div>
+
+  <div class="footer">
+    © 2026 Tarot Space · Вселенная знает
+  </div>
+</div>
+<script src="js/storage.js"></script>
+<script src="js/common.js"></script>
+<script src="js/auth.js"></script>
+</body>
+</html>
